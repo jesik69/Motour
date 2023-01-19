@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acercade"
+    android:background="@color/negro">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mletrasblancas" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fundadoruno"
+        android:layout_width="119sp"
+        android:layout_height="119sp"
+        android:layout_marginTop="30dp"
+        android:padding="1dp"
+        android:src="@drawable/sinfoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fundadordos"
+        android:layout_width="119sp"
+        android:layout_height="119sp"
+        android:padding="1dp"
+        android:src="@drawable/sinfoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fundadoruno"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/spartwell"
+        android:text="Jhon Lopez"
+        android:textColor="@color/blanco"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/fundadoruno"
+        app:layout_constraintStart_toStartOf="@+id/fundadoruno"
+        app:layout_constraintTop_toBottomOf="@+id/fundadoruno" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/spartwell"
+        android:text="Jessica Fonseca"
+        android:textColor="@color/blanco"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/fundadordos"
+        app:layout_constraintStart_toStartOf="@+id/fundadordos"
+        app:layout_constraintTop_toBottomOf="@+id/fundadordos" />
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Cofundador y CTO"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fundador y CEO"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cofundador y CIO"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motour Version 1.0.8"
+        android:textColor="@color/blanco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondomotourclarito"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:background="@color/negro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="119sp"
+            android:layout_height="119sp"
+            android:padding="1dp"
+            android:src="@drawable/sinfoto"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120sp"
+            android:background="@color/negro"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="130sp"
+                android:layout_height="100sp"
+                android:layout_weight="1"
+                android:fontFamily="@font/streetbrush"
+                android:padding="3sp"
+                android:text="@string/Hola"
+                android:textColor="@color/blanco"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/txtnombrerec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/Nombre"
+                android:textColor="@color/blanco"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtusuariorec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:text="@string/Usuario"
+                android:textColor="@color/blanco" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btncerrar"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/salida"
+        android:textColor="@color/blanco"
+        app:layout_constraintEnd_toEndOf="@+id/btnactualizar"
+        app:layout_constraintStart_toStartOf="@+id/btnactualizar"
+        app:layout_constraintTop_toBottomOf="@+id/btnactualizar" />
+
+    <Button
+        android:id="@+id/btnsubirfoto"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="85sp"
+        android:background="@drawable/camaraamarilla"
+        android:textColor="@color/blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btncrear"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ruta"
+        app:layout_constraintEnd_toEndOf="@+id/btnperfil"
+        app:layout_constraintStart_toStartOf="@+id/btnperfil"
+        app:layout_constraintTop_toBottomOf="@+id/btnperfil" />
+
+
+    <Button
+        android:id="@+id/btnperfil"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/usuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="35sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="5dp"
+        android:gravity="end"
+        android:text="@string/Perfil"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnperfil"
+        app:layout_constraintStart_toEndOf="@+id/btnperfil"
+        app:layout_constraintTop_toTopOf="@+id/btnperfil" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="5dp"
+        android:gravity="top"
+        android:text="@string/Crearruta"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/btncrear"
+        app:layout_constraintStart_toEndOf="@+id/btncrear"
+        app:layout_constraintTop_toTopOf="@+id/btncrear" />
+
+    <Button
+        android:id="@+id/btnactualizar"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/motocicleta"
+        app:layout_constraintEnd_toEndOf="@+id/btncrear"
+        app:layout_constraintStart_toStartOf="@+id/btncrear"
+        app:layout_constraintTop_toBottomOf="@+id/btncrear" />
+
+    <TextView
+        android:id="@+id/txvactualizar"
+        android:layout_width="110sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="5dp"
+        android:text="@string/Acerca_de"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/btnactualizar"
+        app:layout_constraintStart_toEndOf="@+id/btnactualizar"
+        app:layout_constraintTop_toTopOf="@+id/btnactualizar" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="110sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="5dp"
+        android:text="@string/Cerrar"
+        android:textColor="@color/negro"
+        app:layout_constraintBottom_toBottomOf="@+id/btncerrar"
+        app:layout_constraintStart_toEndOf="@+id/btncerrar"
+        app:layout_constraintTop_toTopOf="@+id/btncerrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

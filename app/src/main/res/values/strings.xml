@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="false">Motour</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="Ingresar">Login</string>
+    <string name="Contraseña">Password</string>
+    <string name="Usuario">user</string>
+    <string name="Registrar">register</string>
+    <string name="Nombre">name</string>
+    <string name="Apellido">Last Name</string>
+    <string name="Cerrar">" Sign off"</string>
+    <string name="Crearruta">"create route "</string>
+    <string name="Iniciosesion">"Login data "</string>
+    <string name="Telefono">Phone</string>
+    <string name="RH">RH</string>
+    <string name="correo">Email</string>
+    <string name="Actualizar_Datos">"Update data "</string>
+    <string name="Limpiar">Clean</string>
+    <string name="Volver">Return</string>
+    <string name="Parentesco">Relationship</string>
+    <string name="emergencia">Emergency contact details</string>
+    <string name="Continuar">" Continue"</string>
+    <string name="datospersonales">"Personal information "</string>
+    <string name="Perfil">Profile</string>
+    <string name="datos_moto">Motorcycle data</string>
+    <string name="Placa">License plate</string>
+    <string name="Cilindraje">Cylinder</string>
+    <string name="Marca">Brand</string>
+    <string name="Modelo">Model</string>
+    <string name="Informacion_Personal">Personal information</string>
+    <string name="Informacion_moto">Motorcycle information</string>
+    <string name="Acerca_de">About</string>
+    <string name="title_activity_mapa">Map</string>
+    <string name="Hola">Hello!!</string>
+</resources>

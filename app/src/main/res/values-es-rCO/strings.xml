@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Motour</string>
+    <string name="Ingresar">Iniciar Sesión</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Registrar">Registrar</string>
+    <string name="Nombre">Nombres</string>
+    <string name="Apellido">Apellidos</string>
+    <string name="Cerrar">Cerrar Sesion</string>
+    <string name="Crearruta">Crear Ruta</string>
+    <string name="Iniciosesion">Datos de inicio de sesión</string>
+    <string name="Telefono">Télefono</string>
+    <string name="RH">RH</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="Actualizar_Datos">Actualizar Datos</string>
+    <string name="Limpiar">Limpiar Datos</string>
+    <string name="resetPassword">Reestablecer contraseña</string>
+    <string name="Volver">Volver</string>
+    <string name="Parentesco">Parentesco</string>
+    <string name="emergencia">Datos de un contacto de emergencia</string>
+    <string name="Continuar">Continuar</string>
+    <string name="datospersonales">Datos Personales</string>
+    <string name="datos_moto">Datos de la moto</string>
+    <string name="Placa">Placa</string>
+    <string name="Cilindraje">Cilindraje</string>
+    <string name="Marca">Marca</string>
+    <string name="Modelo">Modelo</string>
+    <string name="Informacion_Personal">Informacion personal</string>
+    <string name="Informacion_moto">Informacion de la moto</string>
+    <string name="Acerca_de">Acerca de</string>
+    <string name="Perfil">Perfil</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="Hola">Hola!!</string>
+</resources>

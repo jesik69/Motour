@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfilinformacion"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:background="@color/negro"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fotoperfil"
+            android:layout_width="117sp"
+            android:layout_height="117sp"
+            android:layout_margin="2dp"
+            android:padding="1dp"
+            android:src="@drawable/sinfoto"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/mletrasblancas"
+            tools:layout_editor_absoluteY="338dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/usuario"/>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/Perfil"
+            android:textColor="@color/negro"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="@string/Informacion_Personal"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:gravity="center"
+            android:hint="@string/Nombre" />
+
+
+        <EditText
+            android:id="@+id/nombrerec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:gravity="center"
+            android:hint="@string/Nombre"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30sp"
+    android:paddingLeft="10sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:hint="@string/Apellido"
+        android:layout_marginRight="2dp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        />
+
+    <EditText
+        android:id="@+id/apellidorec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edt_style"
+        android:ems="10"
+        android:hint="@string/Apellido"
+        android:inputType="textPersonName"
+        android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Telefono"
+            android:layout_marginRight="2dp"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/telefonorec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Telefono"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/RH"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/rhrec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/RH"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="@string/Informacion_moto"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Placa"
+            android:layout_marginRight="2dp"/>
+
+        <EditText
+            android:id="@+id/placarec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Placa"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Cilindraje" />
+
+        <EditText
+            android:id="@+id/cilindrajerec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Cilindraje"
+            android:inputType="phone"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Modelo"
+            android:layout_marginRight="2dp"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/modelorec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Modelo"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:layout_marginRight="2dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Marca" />
+
+
+        <EditText
+            android:id="@+id/marcarec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Marca"
+            android:inputType="textPersonName"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:text="@string/emergencia"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Nombre"
+            android:layout_marginRight="2dp"/>
+
+
+        <EditText
+            android:id="@+id/nombre_emer_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:hint="@string/Nombre"
+            android:inputType="textPersonName"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Apellido"
+            android:layout_marginRight="2dp"/>
+
+
+        <EditText
+            android:id="@+id/apellido_emer_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:hint="@string/Apellido"
+            android:inputType="textPersonName"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:paddingLeft="10sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Telefono"
+            android:layout_marginRight="2dp"/>
+
+        <EditText
+            android:id="@+id/telefono_emer_rec"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Telefono"
+            android:inputType="phone"
+            android:gravity="center"
+            android:layout_marginRight="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="@string/Parentesco"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/parentesco_emer_rec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edt_style"
+            android:ems="10"
+            android:hint="@string/Parentesco"
+            android:inputType="phone"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnactdatos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/btnstilo"
+        android:text="@string/Actualizar_Datos"
+        android:textColor="@color/blanco" />
+
+
+</LinearLayout>

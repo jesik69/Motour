@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="50"
+        app:srcCompat="@drawable/motourlogociruculoarreglado" />
+
+    <EditText
+        android:id="@+id/txtusuario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="9"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/iconmoto"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+
+        />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+
+        android:layout_weight="9"
+        android:background="@drawable/edt_style"
+        android:drawableLeft="@drawable/iconocandado"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+
+
+        />
+
+    <Button
+        android:id="@+id/btningresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="9"
+        android:background="@drawable/btnstilo"
+        android:text="@string/Ingresar"
+        android:textColor="@color/blanco" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="9"
+        android:background="@drawable/btnstilo"
+        android:text="@string/Registrar"
+        android:textColor="@color/blanco" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center|top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnfacebook"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/facebook"  />
+
+        <ImageButton
+            android:id="@+id/btngoogle"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_margin="5dp"
+            android:background="@drawable/google" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnolvido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="9"
+        android:background="@drawable/btnstilo"
+        android:text="@string/resetPassword"
+        android:textColor="@color/blanco" />
+</LinearLayout>
